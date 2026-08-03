@@ -1,0 +1,5 @@
+Running Monte Carlo in Julia
+-----------------------------------
+Estimated Pi: 3.141567156
+Julia Execution time:   2.423 s (0 allocations: 0 bytes)
+-----------------------------------

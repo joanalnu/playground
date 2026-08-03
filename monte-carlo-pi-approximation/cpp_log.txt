@@ -1,0 +1,5 @@
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14155
+C++ Execution time: 10056ms (10.056 seconds)
+-----------------------------------
