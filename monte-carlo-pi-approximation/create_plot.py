@@ -19,3 +19,23 @@ ax.set_yscale('log')
 plt.legend()
 plt.title("Execution Time Comparison Plot")
 fig.savefig("comparison_barh_plot.png", dpi=600)
+
+
+# create plot of the accuracy of the results
+import math
+
+cpp_est = [3.13931, 3.14114, 3.14166]
+julia_est = [3.13936, 3.1417928, 3.141578452]
+python_est = [3.143456, 3.1411936, 3.141586808]
+
+fig, ax = plt.subplots(figsize=(8,6))
+ax.hlines(math.pi, min(points), max(points), colors='r', linestyles='--')
+ax.plot(points, cpp_est, label=items[0], markersize=8)
+ax.plot(points, julia_est, label=items[1], markersize=8)
+ax.plot(points, python_est, label=items[2], markersize=8)
+ax.set_xlabel('Total points (n)')
+ax.set_ylabel(r'$\Delta \pi$')
+ax.set_xscale('log')
+plt.legend()
+plt.title(r'$\pi$ Estimate Accuracy')
+fig.savefig('accuracy.png', dpi=6000)
