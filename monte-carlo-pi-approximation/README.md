@@ -33,7 +33,7 @@ A script (`execution`) was created to automatically execute all codes for all sa
 
 # Conclusions
 
-As expected, python is by far the slower programming language. Surprisingly Julia is about ABCDEFGHI faster than C++. Although both are in the same order of magnitude, espeically compared to python.
+As expected, python is by far the slower programming language. Surprisingly Julia is faster than C++. Although both are in the same order of magnitude, espeically compared to python.
 
 Also note-worthy is the fact, that the execution time grew linearly for all languages (in a logarthmic scale).
 
