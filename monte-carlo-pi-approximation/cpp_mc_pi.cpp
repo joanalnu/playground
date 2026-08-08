@@ -3,7 +3,7 @@
 #include <chrono>
 using namespace std;
 
-double estimate_pi(long long total_points) {
+float estimate_pi(long long total_points) {
   long long inside_circle = 0;
 
   // Set up a high-quality random number generator
@@ -34,7 +34,7 @@ int main() {
 
   // execute the sequence
   auto start_time = std::chrono::high_resolution_clock::now();
-  long long pi_estimate = estimate_pi(total_points);
+  float pi_estimate = estimate_pi(total_points);
   auto end_time = std::chrono::high_resolution_clock::now();
 
   // calculate the time
