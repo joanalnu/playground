@@ -1,4 +1,5 @@
 #!/bin/bash
+source .venv/bin/activate
 
 echo 1000 | ./cpp_mc_pi >> cpp_log.txt
 echo 10000 | ./cpp_mc_pi >> cpp_log.txt
