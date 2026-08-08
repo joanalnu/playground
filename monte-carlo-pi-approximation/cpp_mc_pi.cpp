@@ -26,25 +26,25 @@ int estimate_pi(long long total_points) {
 }
 
 int main() {
-    // 100 millian iteratioong
-    long total_points = 1000000000;
-    cin >> total_points;
+  // 100 millian iterations
+  long long total_points = 1000000000;
+  cin >> total_points;
 
-    std::cout << "Running Monte Carlo in C++" << std::endl;
+  std::cout << "Running Monte Carlo in C++" << std::endl;
 
-    // execute the sequence
-    auto start_time = std::chrono::high_resolution_clock::now();
-    long long pi_estimate = estimate_pi(total_points);
-    auto end_time = std::chrono::high_resolution_clock::now();
+  // execute the sequence
+  auto start_time = std::chrono::high_resolution_clock::now();
+  long long pi_estimate = estimate_pi(total_points);
+  auto end_time = std::chrono::high_resolution_clock::now();
 
-    // calculate the time
-    std::chrono::duration<double, std::milli> elapsed = end_time - start_time;
+  // calculate the time
+  std::chrono::duration<double, std::milli> elapsed = end_time - start_time;
 
-    // Output results
-    std::cout << "-----------------------------------" << std::endl;
-    std::cout << "Estimated Pi: " << pi_estimate << std::endl;
-    std::cout << "C++ Execution time: " << elapsed.count() << "ms (" << elapsed.count() / 1000.0 << " seconds)" << std::endl;
-    std::cout << "-----------------------------------" << std::endl;
+  // Output results
+  std::cout << "-----------------------------------" << std::endl;
+  std::cout << "Estimated Pi: " << pi_estimate << std::endl;
+  std::cout << "C++ Execution time: " << elapsed.count() << "ms (" << elapsed.count() / 1000.0 << " seconds)" << std::endl;
+  std::cout << "-----------------------------------" << std::endl;
 
-    return 0;
+  return 0;
 }
