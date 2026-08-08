@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+plt.style.use("dark_background")
 
 items = ["C++", "Julia", "Python"]
 points = [1000000, 5000000, 1000000000]
@@ -8,9 +9,9 @@ python_data = [0.2059, 0.9752, 195.5452] # seconds
 
 
 fig, ax = plt.subplots(figsize=(8,6))
-ax.plot(points, cpp_data, label=items[0])
-ax.plot(points, julia_data, label=items[1])
-ax.plot(points, python_data, label=items[2])
+ax.plot(points, cpp_data, label=items[0], marker='x', markersize=6)
+ax.plot(points, julia_data, label=items[1], marker='x', markersize=6)
+ax.plot(points, python_data, label=items[2], marker='x', markersize=6)
 ax.set_xlabel('Total points (n)')
 ax.set_ylabel('Execution time')
 ax.set_xscale('log')

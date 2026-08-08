@@ -23,46 +23,16 @@ And, of course, you need to have all three languages installed to be able to run
 
 # Results
 
-### Python
+![Comparison Plot of the execution time for C++, Julia and Python for 3 different sample sizes](comparison_barh_plot.png)
 
-```
-Running Monte Carlo in Python...
------------------------------------
-Estimated Pi: 3.141605792
-Python Execution time: 140.1580 seconds
------------------------------------
-```
+Exact results can be seen in the respective `<lang>_log.txt` files.
 
-_Note: the Python code was executed using both a system-wide and a virtual environment installation, both obtained similar execution times (up to 0.01 order of magnitude)_
+### Notes on the execution
 
-### C++
-
-```
-Running Monte Carlo in C++
------------------------------------
-Estimated Pi: 3.14155
-C++ Execution time: 10056ms (10.056 seconds)
------------------------------------
-``` 
-
-_Note: the code was compiled using the `-O3` tag for optimisation leve 3 (the maximum), which should make the programm run as fast as possible._
-
-### Julia
-
-```
-Running Monte Carlo in Julia
------------------------------------
-Estimated Pi: 3.141567156
-Julia Execution time:   2.423 s (0 allocations: 0 bytes)
------------------------------------
-```
-
-_Note: the function is compiled first and then run again for the clocking._
-
-![Horizontal bar plot with logaritmic x-axis showing a visual comparison of the 3 execution times.](comparison_barh_plot.png)
+A script (`execution`) was created to automatically execute all codes for all sample sizes. Before benchmarking, the Python script was run with a virtual enviroment as well as with a system-wide python installation, with no substantial difference in execution time (especially, given the absolute values of Python). As standard for benchmarking and optimisation, the C++ script was compiled using the `g++ -O3` flag for the high optimisation level, and the Julia scripts first runs the `estimate_pi` function without time-keeping (for JIT) and then (once it's compiled) it benchmarks the execution. 
 
 # Conclusions
 
-As expected, `python` is by far the slower programming language. Surprisingly `Julia` is about 7.5 faster than the famous `C++`. Although both are in the same order of magnitude.
+As expected, python is by far the slower programming language. Surprisingly Julia is about ABCDEFGHI faster than C++. Although both are in the same order of magnitude, espeically compared to python.
 
-For another day: test whether this ratios are stable if the number of random points changes, or whether there are execution time optimised random value generator functions in specific packages.
+Also note-worthy is the fact, that the execution time grew linearly for all languages (in a logarthmic scale).
