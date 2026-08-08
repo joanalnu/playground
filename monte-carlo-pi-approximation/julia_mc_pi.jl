@@ -13,7 +13,7 @@ function estimate_pi(n)
 end
 
 #iterations = 1_000_000_000
-iterations = readline() 
+iterations = parse(Int64, readline())
 println("Running Monte Carlo in Julia")
 
 
@@ -27,4 +27,4 @@ println("Estimated Pi: ", result)
 print("Julia Execution time: ")
 @btime estimate_pi($iterations)
 
-print("-----------------------------------")
+println("-----------------------------------")
