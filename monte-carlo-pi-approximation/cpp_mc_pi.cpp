@@ -1,42 +1,43 @@
 #include <iostream>
 #include <random>
 #include <chrono>
+using namespace std;
+
+int estimate_pi(long long total_points) {
+  long long inside_circle = 0;
+
+  // Set up a high-quality random number generator
+  random_device rd;
+  mt19937 generator(rd());
+  uniform_real_distribution<double> distribution(0.0, 1.0);
+
+  // Run the Monte Carlo simulation
+  for (long long i = 0; i < total_points; i++) {
+    double x = distribution(generator);
+    double y = distribution(generator);
+
+    // If the point is inside the unit circle
+    if (x * x + y * y <= 1.0) {
+      inside_circle++;
+    }
+  }
+
+  return 4.0 * inside_circle / total_points;
+}
 
 int main() {
     // 100 millian iterations
     const long long total_points = 1000000000;
-    long long inside_circle = 0;
-
-    // Set up a high-quality random number generator
-    std::random_device rd;
-    std::mt19937 generator(rd());
-    std::uniform_real_distribution<double> distribution(0.0, 1.0);
 
     std::cout << "Running Monte Carlo in C++" << std::endl;
 
-    // 1. START THE STOPWATCH
+    // execute the sequence
     auto start_time = std::chrono::high_resolution_clock::now();
-
-    // Run the Monte Carlo simulation
-    for (long long i = 0; i < total_points; ++i) {
-        double x = distribution(generator);
-        double y = distribution(generator);
-
-        // If the point is inside the unit circle
-        if (x * x + y * y <= 1.0) {
-            inside_circle++;
-        }
-    }
-
-    // 2. STOP THE STOPWATCH
+    long long pi_estimate = estimate_pi(total_points);
     auto end_time = std::chrono::high_resolution_clock::now();
 
-    // 3. CALCULATE THE DIFFERENCE
-    // We cast the duration into milliseconds using double precision
+    // calculate the time
     std::chrono::duration<double, std::milli> elapsed = end_time - start_time;
-
-    // Calculate Pi
-    double pi_estimate = 4.0 * inside_circle / total_points;
 
     // Output results
     std::cout << "-----------------------------------" << std::endl;
