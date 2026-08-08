@@ -20,7 +20,7 @@ plt.legend()
 plt.title("Execution Time Comparison Plot")
 fig.savefig("comparison_barh_plot.png", dpi=600)
 
-
+plt.close()
 # create plot of the accuracy of the results
 import math
 
@@ -38,4 +38,4 @@ ax.set_ylabel(r'$\Delta \pi$')
 ax.set_xscale('log')
 plt.legend()
 plt.title(r'$\pi$ Estimate Accuracy')
-fig.savefig('accuracy.png', dpi=6000)
+fig.savefig('accuracy.png', dpi=600)
