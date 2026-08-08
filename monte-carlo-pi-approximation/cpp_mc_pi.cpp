@@ -26,8 +26,9 @@ int estimate_pi(long long total_points) {
 }
 
 int main() {
-    // 100 millian iterations
-    const long long total_points = 1000000000;
+    // 100 millian iteratioong
+    long total_points = 1000000000;
+    cin >> total_points;
 
     std::cout << "Running Monte Carlo in C++" << std::endl;
 

@@ -12,7 +12,8 @@ def estimate_pi(n):
             inside_circle += 1
     return 4.0 * inside_circle / n
 
-iterations = 1_000_000_000
+#iterations = 1_000_000_000
+iterations = int(input())
 
 print("Running Monte Carlo in Python...")
 start_time = time.time()

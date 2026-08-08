@@ -12,8 +12,8 @@ function estimate_pi(n)
     return 4.0 * inside_circle / n
 end
 
-iterations = 1_000_000_000
-
+#iterations = 1_000_000_000
+iterations = readline() 
 println("Running Monte Carlo in Julia")
 
 
