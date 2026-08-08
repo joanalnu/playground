@@ -3,7 +3,7 @@
 #include <chrono>
 using namespace std;
 
-int estimate_pi(long long total_points) {
+double estimate_pi(long long total_points) {
   long long inside_circle = 0;
 
   // Set up a high-quality random number generator
