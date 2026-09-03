@@ -19,7 +19,7 @@
 [37m[0m[1m               ``-:::::-``[0m
 [19A[9999999D[43C[0m[1m[32m[1mjoanalnu[0m@[32m[1mjoanalnu-B360M-DS3H[0m 
 [43C[0m----------------------------[0m 
-[43C[0m[32m[1mOS[0m[0m:[0m Linux Mint 22.3 x86_64[0m 
+---
 [43C[0m[32m[1mHost[0m[0m:[0m B360M-DS3H[0m 
 [43C[0m[32m[1mKernel[0m[0m:[0m 7.0.0-28-generic[0m 
 [43C[0m[32m[1mUptime[0m[0m:[0m 6 days, 3 hours, 6 mins[0m 
