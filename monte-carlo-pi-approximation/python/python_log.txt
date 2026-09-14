@@ -1,0 +1,20 @@
+Running Monte Carlo in Python...
+-----------------------------------
+Estimated Pi: 3.140396
+Python Execution time: 0.0373 seconds
+-----------------------------------
+Running Monte Carlo in Python...
+-----------------------------------
+Estimated Pi: 3.1423032
+Python Execution time: 0.2317 seconds
+-----------------------------------
+Running Monte Carlo in Python...
+-----------------------------------
+Estimated Pi: 3.141544996
+Python Execution time: 20.4744 seconds
+-----------------------------------
+Running Monte Carlo in Python...
+-----------------------------------
+Estimated Pi: 3.1415948432
+Python Execution time: 202.2099 seconds
+-----------------------------------
