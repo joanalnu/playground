@@ -7,14 +7,27 @@ echo 1000000 | ./cpp_mc_pi >> cpp_log.txt
 echo 5000000 | ./cpp_mc_pi >> cpp_log.txt
 echo 1000000000 | ./cpp_mc_pi >> cpp_log.txt
 
+cat cpp_log.txt
+
 cd ..
 
-echo 1000000 | julia/mc_pi.jl >> julia/julia_log.txt
-echo 5000000 | julia/mc_pi.jl >> julia/julia_log.txt
-echo 1000000000 | julia/mc_pi.jl >> julia/julia_log.txt
+echo 1000000 | julia julia/mc_pi.jl >> julia/julia_log.txt
+echo 5000000 | julia julia/mc_pi.jl >> julia/julia_log.txt
+echo 1000000000 | julia julia/mc_pi.jl >> julia/julia_log.txt
+
+cat julia/julia_log.txt
 
 source .venv/bin/activate
 
-echo 1000000 | python mc_pi.py >> python/python_log.txt
-echo 5000000 | python mc_pi.py >> python/python_log.txt
-echo 1000000000 | python mc_pi.py >> pytohn/python_log.txt
+echo 1000000 | python python/mc_pi.py >> python/python_log.txt
+echo 5000000 | python python/mc_pi.py >> python/python_log.txt
+echo 1000000000 | python python/mc_pi.py >> python/python_log.txt
+
+cat python/python_log.txt
+
+
+# reporting
+neofetch > report/stats.txt || fastfetch > report|stats.txt
+cat report/stats.txt
+
+python report/create_plots.py

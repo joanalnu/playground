@@ -18,3 +18,40 @@ Copyright (C) 2023 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14193
+C++ Execution time: 26.9802ms (0.0269802 seconds)
+-----------------------------------
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14211
+C++ Execution time: 68.1112ms (0.0681112 seconds)
+-----------------------------------
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14157
+C++ Execution time: 9911.64ms (9.91164 seconds)
+-----------------------------------
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14158
+C++ Execution time: 25.7003ms (0.0257003 seconds)
+-----------------------------------
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14023
+C++ Execution time: 70.0245ms (0.0700245 seconds)
+-----------------------------------
+Running Monte Carlo in C++
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14266
+C++ Execution time: 27.502ms (0.027502 seconds)
+-----------------------------------
+Running Monte Carlo in C++
+-----------------------------------
+Estimated Pi: 3.14138
+C++ Execution time: 69.1003ms (0.0691003 seconds)
+-----------------------------------
+Running Monte Carlo in C++
