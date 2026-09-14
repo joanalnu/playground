@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd cpp
-g++ -03 mc_pi.cpp -o cpp_mc_pi
+g++ -O3 mc_pi.cpp -o cpp_mc_pi
 
 echo 1000000 | ./cpp_mc_pi >> cpp_log.txt
 echo 5000000 | ./cpp_mc_pi >> cpp_log.txt
@@ -9,9 +9,9 @@ echo 1000000000 | ./cpp_mc_pi >> cpp_log.txt
 
 cd ..
 
-echo 1000000 | julia _mc_pi.jl >> julia/julia_log.txt
-echo 5000000 | julia mc_pi.jl >> julia/julia_log.txt
-echo 1000000000 | julia mc_pi.jl >> julia/julia_log.txt
+echo 1000000 | julia/mc_pi.jl >> julia/julia_log.txt
+echo 5000000 | julia/mc_pi.jl >> julia/julia_log.txt
+echo 1000000000 | julia/mc_pi.jl >> julia/julia_log.txt
 
 source .venv/bin/activate
 
