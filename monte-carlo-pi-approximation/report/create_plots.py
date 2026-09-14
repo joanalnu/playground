@@ -15,7 +15,7 @@ LOG_FILES = {
 }
 
 # Values corresponding to evaluation inputs
-POINTS = [1_000_000, 5_000_000, 1_000_000_000]
+POINTS = [1_000_000, 5_000_000, 1_000_000_000, 10_000_000_000]
 
 def parse_log(filepath):
     """Extracts pi estimates and execution times (in seconds) from log files."""
